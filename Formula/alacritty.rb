@@ -14,8 +14,7 @@ class Alacritty < Formula
   def install
     # rustup-init build homedir. It will update ENV["CARGO_HOME"] to be something like /private/tmp/alacritty-20180906/.brew_home/.cargo/bin
     system "rustup-init", "--no-modify-path", "--default-toolchain", "stable", "-y"
-    ENV.append_path "PATH", *Dir[File.join(ENV['CARGO_HOME'], "bin")]
-    system "rustup", "default", "stable"
+    ENV.append_path "PATH", *Dir["#{ENV['HOME']}/.cargo/bin"]
 
     # Build the app!
     system "gmake", "app"

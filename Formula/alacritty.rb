@@ -5,6 +5,8 @@ class Alacritty < Formula
   homepage "https://github.com/jwilm/alacritty"
   head "https://github.com/jwilm/alacritty.git", using: :git
 
+  version "1.0.0"
+
   depends_on "fontconfig"
   depends_on "coreutils"
   depends_on "rustup-init"

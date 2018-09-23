@@ -1,4 +1,4 @@
-class LuasCli < Formula
+class TwitterListsManager < Formula
   desc "Twitter lists manager CLI"
   homepage "https://github.com/amitizle/twitter-lists-manager"
   url "https://github.com/amitizle/twitter-lists-manager/releases/download/0.1.3/twitter-lists-manager0.1.3_darwin_x86_64.tar.gz"
